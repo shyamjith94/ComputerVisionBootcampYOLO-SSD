@@ -2,6 +2,7 @@ import cv2
 import numpy
 import numpy as np
 import matplotlib.pyplot as plt
+import os
 
 
 def draw_the_line(image, lines):
@@ -69,7 +70,12 @@ def get_detected_line(image: numpy.array([])):
     return image_with_lines
 
 
-video = cv2.VideoCapture(r'Data/lane_detection_video.mp4')
+video_file = r"Data\lane_detection_video.mp4"
+os.chdir('../')
+current_dir = os.getcwd()
+image_path = os.path.join(current_dir, video_file)
+
+video = cv2.VideoCapture(image_path)
 while video.isOpened():
     is_grabbed, frame = video.read()
 
