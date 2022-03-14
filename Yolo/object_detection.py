@@ -1,6 +1,5 @@
 import numpy as np
 
-from config import config
 import cv2
 import os
 
@@ -12,6 +11,9 @@ classes = ['car', 'person', 'bus']  # data set index (0:person, 2:car, 5:bus)
 
 def setup_neural_network():
     """
+    To download config and weight file
+        https://pjreddie.com/darknet/yolo/
+    place to yolo folder, download 320 pixel files
     :return: DNN
     """
     # we have 80(90) possible out put classes in coco data set. we are dealing with 3 possible ouput
