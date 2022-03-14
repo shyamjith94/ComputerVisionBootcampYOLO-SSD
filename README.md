@@ -10,4 +10,10 @@ added working video file download zip or clone repo and see
 real time face detection using viola james algorithm fail in some orientation 
 
 # SVM LinearSVC
-classification human and non-human faces data be used fetch_lfw_people from sklern 
+classification human and non-human faces data be used fetch_lfw_people from sklern
+
+# YOLO Algorithm
+
+classification and detection of human face and cars from images and video
+using config and weight file yolo 320
+https://pjreddie.com/darknet/yolo/
