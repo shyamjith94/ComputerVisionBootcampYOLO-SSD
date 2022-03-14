@@ -1,5 +1,5 @@
 import numpy as np
-
+from config import config
 import cv2
 import os
 
