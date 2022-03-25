@@ -7,6 +7,9 @@ Computer Vision Bootcamp with Python (OpenCV) - YOLO, SSD
 
 # Face detection
 
+* using webcam detect human face
+
+# Detect straight face 
 real time face detection using viola james algorithm fail in some orientation
 * https://drive.google.com/file/d/1K82Sa1Y5C_8rr-d5RyxWAK8BRF4N5RZA/view?usp=sharing
 * https://drive.google.com/file/d/1HPM9Vakcvw41lwWwr7ZiYPlfEw7dDiPk/view?usp=sharing
@@ -16,7 +19,7 @@ real time face detection using viola james algorithm fail in some orientation
 
 * https://drive.google.com/file/d/1VgNuR0mdT2ecS-OFD-___-EUxIamMfj-/view?usp=sharing
 * https://drive.google.com/file/d/1haeKfJ4Ct7reO1fZQ6yznp39oO1HTM-b/view?usp=sharing
-* 
+
 # SVM LinearSVC
 classification human and non-human faces data be used fetch_lfw_people from sklern
 
