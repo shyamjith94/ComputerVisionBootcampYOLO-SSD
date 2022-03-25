@@ -70,21 +70,22 @@ def get_detected_line(image: numpy.array([])):
     return image_with_lines
 
 
-video_file = r"Data\lane_detection_video.mp4"
-os.chdir('../')
-current_dir = os.getcwd()
-image_path = os.path.join(current_dir, video_file)
+if __name__ == '__main__':
+    video_file = r"Data\lane_detection_video.mp4"
+    os.chdir('../')
+    current_dir = os.getcwd()
+    image_path = os.path.join(current_dir, video_file)
 
-video = cv2.VideoCapture(image_path)
-while video.isOpened():
-    is_grabbed, frame = video.read()
+    video = cv2.VideoCapture(image_path)
+    while video.isOpened():
+        is_grabbed, frame = video.read()
 
-    # because the end of video
-    if not is_grabbed:
-        break
-    image_gray = get_detected_line(frame)
-    cv2.imshow('line detection video', image_gray)
-    cv2.waitKey(100)
+        # because the end of video
+        if not is_grabbed:
+            break
+        image_gray = get_detected_line(frame)
+        cv2.imshow('line detection video', image_gray)
+        cv2.waitKey(100)
 
-video.release()
-cv2.destroyAllWindows()
+    video.release()
+    cv2.destroyAllWindows()
