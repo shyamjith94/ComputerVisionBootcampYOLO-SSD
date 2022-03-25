@@ -172,4 +172,4 @@ def main(file_format, file_path):
 
 
 if __name__ == '__main__':
-    main(file_format=0, file_path=r"Data\yolo_test.mp4")
+    main(file_format=0, file_path=r"C:\Git\ComputerVisionBootcampYOLO-SSD\Data\yolo_test.mp4")
